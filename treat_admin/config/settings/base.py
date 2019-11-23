@@ -25,7 +25,7 @@ SECRET_KEY = 'j^!$3()5y4v@p1zh55^&4%*6bn)4p&kfu-o)&(fr6)1)7_zvmv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['msm-treat-admin.digitalgizmo.com']
+ALLOWED_HOSTS = ['msm-treat-admin.digitalgizmo.com', '127.0.0.1']
 
 
 # Application definition
