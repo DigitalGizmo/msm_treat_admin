@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['msm-treat-admin.digitalgizmo.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     'journal.apps.JournalConfig',
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

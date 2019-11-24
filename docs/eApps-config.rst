@@ -26,6 +26,7 @@ pip installs
 	pip install django==2.0.13
 	pip install psycopg2-binary
 	pip install Unipath
+	pip install djangorestframework==3.9.4
 
 Set up apache with wsgi
 in /etc/httpd/conf/httpd.conf
