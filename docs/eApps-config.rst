@@ -28,6 +28,12 @@ pip installs
 	pip install Unipath
 	pip install djangorestframework==3.9.4
 
+
+Apache error log
+::
+
+    /var/www/httpd-logs/msm-treat-admin.digitalgizmo.com.error.log
+
 Set up apache with wsgi
 in /etc/httpd/conf/httpd.conf
 For the ssl version 
