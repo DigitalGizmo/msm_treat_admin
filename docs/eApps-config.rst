@@ -27,6 +27,7 @@ pip installs
 	pip install psycopg2-binary
 	pip install Unipath
 	pip install djangorestframework==3.9.4
+	pip install django-cors-headers
 
 
 Apache error log
