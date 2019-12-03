@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Entry
 
 class EntryAdmin(admin.ModelAdmin):
-    # change_form_template = 'supporting/admin/narr_mblurb_change_form.html'
+    change_form_template = 'journal/admin/journal_change_form.html'
     fieldsets = [
         (None,  {'fields': ['title', 'slug', 'entry_date', 'ordinal', 
             'lat', 'lon', 'zoom_level', 'is_flippable', 'entry_text']}),
