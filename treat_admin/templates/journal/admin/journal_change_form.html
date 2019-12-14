@@ -7,12 +7,16 @@
 		$(function() {
 			// set editor with options for textareas
 			$('#id_entry_text').froalaEditor(froalaIntro);
+			$('#id_interpret_blurb').froalaEditor(froalaBlurb);
+			$('#id_interpret_more').froalaEditor(froalaIntro);
 
 			// for inLine texts
 			$('.vLargeTextField').froalaEditor(froalaNarrow);
 
 			// get rid of float for labels
 			$('label[for="id_entry_text"]').css('float', 'none');
+			$('label[for="id_interpret_blurb"]').css('float', 'none');
+			$('label[for="id_interpret_more"]').css('float', 'none');
 		});
 	</script>
 {% endblock after_related_objects %}

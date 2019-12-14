@@ -11,6 +11,8 @@ class Entry(models.Model):
     zoom_level = models.IntegerField(default=10)
     is_flippable = models.BooleanField('Allow image flip', default=False)
     entry_text = models.TextField(blank=True, default='')
+    interpret_blurb = models.TextField(blank=True, default='')
+    interpret_more = models.TextField(blank=True, default='')
 
     class Meta:
         ordering = ['entry_date', 'ordinal']
