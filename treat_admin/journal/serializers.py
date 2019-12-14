@@ -8,5 +8,6 @@ class EntriesSerializer(serializers.ModelSerializer):
 	entry_date = serializers.DateField(format="%d %B, %Y", input_formats=['%d-%m-%Y', 'iso-8601'])
 	class Meta:
 			model = Entry
-			fields = ('title', 'slug', 'entry_date', 'lat', 'lon', 'zoom_level', 'is_flippable', 'entry_text')
+			fields = ('title', 'slug', 'entry_date', 'lat', 'lon', 'zoom_level', 
+				'is_flippable', 'entry_text','interpret_blurb', 'interpret_more')
 
