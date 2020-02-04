@@ -1,7 +1,8 @@
 // option settings for Froala
 
-var froalaIntro = {
-	heightMin: 170,
+var froalaInterpret = {
+	heightMin: 140,
+	width: '600',
 	pastePlain: true,
 	toolbarButtons: ['italic', 'quote', 'formatOL', 'formatUL', 'superscript',
 		'|', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html'],
@@ -9,9 +10,35 @@ var froalaIntro = {
 		'|', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html'],
 	toolbarButtonsSM: ['italic', 'quote', 'formatOL', 'formatUL', 'superscript',
 		'|', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html'],
-	width: '800'
 }
 
+var froalaDrawing = {
+	heightMin: 140,
+	width: '500',
+	pastePlain: true,
+	placeholderText: 'Single (short) paragraph only.',
+	toolbarButtons: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
+		'selectAll', 'html'],
+	toolbarButtonsMD: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
+		'selectAll', 'html'],
+	toolbarButtonsSM: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
+		'selectAll', 'html'],
+}
+
+var froalaTranscript = {
+	heightMin: 300,
+	width: '500',
+	pastePlain: true,
+	placeholderText: 'Single (short) paragraph only.',
+	toolbarButtons: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
+		'selectAll', 'html'],
+	toolbarButtonsMD: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
+		'selectAll', 'html'],
+	toolbarButtonsSM: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
+		'selectAll', 'html'],
+}
+
+// legacy
 var froalaMeta = {
 	heightMin: 300,
 	linkAlwaysBlank: true,
@@ -52,18 +79,6 @@ var froalaSlim = {
 	width: '800'
 }
 
-var froalaBlurb = {
-	heightMin: 80,
-	pastePlain: true,
-	placeholderText: 'Single (short) paragraph only.',
-	toolbarButtons: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
-		'selectAll', 'html'],
-	toolbarButtonsMD: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
-		'selectAll', 'html'],
-	toolbarButtonsSM: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
-		'selectAll', 'html'],
-	width: '600'
-}
 var froalaNarrow = {
 	heightMin: 200,
 	pastePlain: true,
@@ -77,15 +92,3 @@ var froalaNarrow = {
 	width: '300'
 }
 
-var froalaTranscript = {
-	heightMin: 250,
-	pastePlain: true,
-	placeholderText: 'Single (short) paragraph only.',
-	toolbarButtons: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
-		'selectAll', 'html'],
-	toolbarButtonsMD: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
-		'selectAll', 'html'],
-	toolbarButtonsSM: ['italic', '|', 'undo', 'redo', 'clearFormatting', 
-		'selectAll', 'html'],
-	width: '500'
-}

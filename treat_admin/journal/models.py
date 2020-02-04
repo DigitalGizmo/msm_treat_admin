@@ -10,9 +10,9 @@ class Entry(models.Model):
     lon = models.FloatField('longitude')
     zoom_level = models.IntegerField(default=10)
     is_flippable = models.BooleanField('Allow image flip', default=False)
-    entry_text = models.TextField(blank=True, default='')
-    interpret_blurb = models.TextField(blank=True, default='')
-    interpret_more = models.TextField(blank=True, default='')
+    entry_text = models.TextField('Transcription', blank=True, default='')
+    interpret_blurb = models.TextField('Interpretation', blank=True, default='')
+    interpret_more = models.TextField('Drawing Interpretation', blank=True, default='')
 
     class Meta:
         ordering = ['entry_date', 'ordinal']
