@@ -5,7 +5,7 @@ class Entry(models.Model):
     slug = models.SlugField('short name', max_length=48, unique=True)
     title = models.CharField(max_length=64)
     entry_date = models.DateField()
-    ordinal = models.IntegerField('sequence in day', null=True, blank=True)
+    ordinal = models.IntegerField('Sequence on Trail', default=99)
     lat = models.FloatField('latitude')
     lon = models.FloatField('longitude')
     zoom_level = models.IntegerField(default=10)
