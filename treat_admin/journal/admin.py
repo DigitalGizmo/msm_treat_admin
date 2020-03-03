@@ -10,7 +10,8 @@ class EntryAdmin(admin.ModelAdmin):
         # ('Behind the scenes',   {'fields': ['status_num', 'edited_by', 
         #     'edit_date', 'notes']}),
     ]
-    list_display = ('title', 'slug', 'entry_date', 'lat', 'lon', 'zoom_level')
+    list_display = ('title', 'slug', 'entry_date', 'ordinal',
+        'lat', 'lon', 'zoom_level')
     # list_filter     = ['status_num'] 
     # search_fields = ['title', 'slug']
 
