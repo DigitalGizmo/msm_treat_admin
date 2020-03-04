@@ -15,7 +15,8 @@ Updates
 	touch /var/www/msm_user/data/www/msm-treat-admin.digitalgizmo.com/treat_admin/config/wsgi.py
 
 Database
-msm_admin_db
+- treat_db
+- access via pgAdmin
 
 Working with Django
 Need to login as root 
