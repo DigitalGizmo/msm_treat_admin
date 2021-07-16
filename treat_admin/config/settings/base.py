@@ -144,3 +144,7 @@ STATIC_ROOT = BASE_DIR.ancestor(2).child("msm-treat-admin-static")
 STATICFILES_DIRS = (
     BASE_DIR.child("local_static"),
 )
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
