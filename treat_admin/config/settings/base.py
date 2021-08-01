@@ -10,8 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
-# import os
-
+# Normally you should not import ANYTHING from Django directly 
+# into your settings, but ImproperlyConfigured is an exception. 
+# For secret key retrieval
+from django.core.exceptions import ImproperlyConfigured
 from unipath import Path
 BASE_DIR = Path(__file__).ancestor(3)
 
@@ -19,8 +21,18 @@ BASE_DIR = Path(__file__).ancestor(3)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
+def get_env_variable(var_name):
+    """Get the environment variable or return exception.""" 
+    try:
+        return os.environ[var_name] 
+    except KeyError:
+        error_msg = 'Set the {} environment 􏰁→ variable'.format(var_name)
+        raise ImproperlyConfigured(error_msg)
+
+
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'j^!$3()5y4v@p1zh55^&4%*6bn)4p&kfu-o)&(fr6)1)7_zvmv'
+SECRET_KEY = get_env_variable('TREAT_DJANGO_KEY')
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
