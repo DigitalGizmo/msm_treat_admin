@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
+import os
 
 # Normally you should not import ANYTHING from Django directly 
 # into your settings, but ImproperlyConfigured is an exception. 
